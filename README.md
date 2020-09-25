@@ -39,4 +39,9 @@ In this step, I use the prediction results by the best model to recommend 5 movi
 The RMSE of the best ALS model on the test data is 0.71, indicating the model is with good performance in predicting the ratings for movies; ALS model is able to provide both recommendations of movies based on user's preferences and also similar movies to a specific movie, which shows its effectiveness as one of most critical techniques in recommendation system. More works can be considered to further improve the model performance, such as making use of information from other data sets such as genres of movies and tag information, building ALS model incorporatng both explicit and implicit feedbacks, and try some other techniques such as KNN, Deep Learning, applying ensemble based on several methods, and so on.
 
 
+# Feature Engineering with Spark
+
+To scale the feature engineering to a large dataset, the data was partitioned and automated feature engineering was run in parallel
+using Apache Spark with PySpark. 
+
 ![](graphs/spark-logo-trademark.png)
